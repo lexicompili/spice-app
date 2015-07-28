@@ -12,14 +12,19 @@ class SAHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        let myView = NSBundle.mainBundle().loadNibNamed("SAHome", owner: nil, options: nil)[0] as! SAHomeView
+        view.addSubview(myView)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
     
 
     /*

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SAHomeView: UIView {
+class SAHomeView: UIView{
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -17,5 +17,8 @@ class SAHomeView: UIView {
         // Drawing code
     }
     */
+    @IBOutlet weak var searchBar: UISearchBar!
+
+    
 
 }

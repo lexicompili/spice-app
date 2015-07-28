@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D341DE611B6387050037260B /* SAHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = D341DE601B6387050037260B /* SAHome.xib */; };
+		D341DE6C1B6387D40037260B /* SAHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341DE6B1B6387D40037260B /* SAHomeView.swift */; };
+		D341DE6E1B6388FE0037260B /* SAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341DE6D1B6388FE0037260B /* SAHomeViewController.swift */; };
 		D3F56CBC1B638528003A669F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F56CBB1B638528003A669F /* AppDelegate.swift */; };
 		D3F56CBF1B638528003A669F /* Spice_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3F56CBD1B638528003A669F /* Spice_App.xcdatamodeld */; };
 		D3F56CC11B638528003A669F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F56CC01B638528003A669F /* ViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D341DE601B6387050037260B /* SAHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SAHome.xib; path = Xibs/SAHome.xib; sourceTree = "<group>"; };
+		D341DE6B1B6387D40037260B /* SAHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SAHomeView.swift; path = Views/SAHomeView.swift; sourceTree = "<group>"; };
+		D341DE6D1B6388FE0037260B /* SAHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SAHomeViewController.swift; path = Controllers/SAHomeViewController.swift; sourceTree = "<group>"; };
 		D3F56CB61B638528003A669F /* Spice App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spice App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F56CBA1B638528003A669F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3F56CBB1B638528003A669F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D341DE5C1B63867B0037260B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D341DE6D1B6388FE0037260B /* SAHomeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D341DE5D1B6386850037260B /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D341DE601B6387050037260B /* SAHome.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		D341DE621B6387360037260B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D341DE6B1B6387D40037260B /* SAHomeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		D3F56CAD1B638528003A669F = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +109,9 @@
 		D3F56CB81B638528003A669F /* Spice App */ = {
 			isa = PBXGroup;
 			children = (
+				D341DE621B6387360037260B /* Views */,
+				D341DE5D1B6386850037260B /* Xibs */,
+				D341DE5C1B63867B0037260B /* Controllers */,
 				D3F56CBB1B638528003A669F /* AppDelegate.swift */,
 				D3F56CC01B638528003A669F /* ViewController.swift */,
 				D3F56CC21B638528003A669F /* Main.storyboard */,
@@ -196,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F56CC41B638528003A669F /* Main.storyboard in Resources */,
+				D341DE611B6387050037260B /* SAHome.xib in Resources */,
 				D3F56CC91B638528003A669F /* LaunchScreen.xib in Resources */,
 				D3F56CC61B638528003A669F /* Images.xcassets in Resources */,
 			);
@@ -218,6 +252,8 @@
 				D3F56CC11B638528003A669F /* ViewController.swift in Sources */,
 				D3F56CBF1B638528003A669F /* Spice_App.xcdatamodeld in Sources */,
 				D3F56CBC1B638528003A669F /* AppDelegate.swift in Sources */,
+				D341DE6C1B6387D40037260B /* SAHomeView.swift in Sources */,
+				D341DE6E1B6388FE0037260B /* SAHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +449,7 @@
 				D3F56CDA1B638528003A669F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3F56CDB1B638528003A669F /* Build configuration list for PBXNativeTarget "Spice AppTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +458,7 @@
 				D3F56CDD1B638528003A669F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
