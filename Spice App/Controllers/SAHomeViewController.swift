@@ -8,23 +8,26 @@
 
 import UIKit
 
-class SAHomeViewController: UIViewController {
 
+class SAHomeViewController: UIViewController, UICollectionViewDataSource {
+
+    var homeView = NSBundle.mainBundle().loadNibNamed("SAHome", owner: nil, options: nil)[0] as! SAHomeView
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        let myView = NSBundle.mainBundle().loadNibNamed("SAHome", owner: nil, options: nil)[0] as! SAHomeView
-        view.addSubview(myView)
+        view.addSubview(homeView)
+        
+        //Set delegate value
+        homeView.featuredRecipesCollectionView.dataSource = self
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
     
 
     /*
@@ -37,4 +40,18 @@ class SAHomeViewController: UIViewController {
     }
     */
 
+}
+
+
+extension SAHomeViewController: UICollectionViewDataSource {
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+    
 }

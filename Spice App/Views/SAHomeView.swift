@@ -18,6 +18,7 @@ class SAHomeView: UIView{
     }
     */
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var featuredRecipesCollectionView: UICollectionView!
 
     
 
