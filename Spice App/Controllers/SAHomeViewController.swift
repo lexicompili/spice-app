@@ -11,7 +11,8 @@ import UIKit
 
 class SAHomeViewController: UIViewController, UICollectionViewDataSource {
 
-    var homeView = NSBundle.mainBundle().loadNibNamed("SAHome", owner: nil, options: nil)[0] as! SAHomeView
+    private var homeView = NSBundle.mainBundle().loadNibNamed("SAHome", owner: nil, options: nil)[0] as! SAHomeView
+    private let reuseIdentifier = "FeaturedRecipesViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,10 @@ class SAHomeViewController: UIViewController, UICollectionViewDataSource {
         
         //Set delegate value
         homeView.featuredRecipesCollectionView.dataSource = self
+        
+        //Register nib file for featured recipe collection view cell
+        let nibName = UINib(nibName: "SAFeaturedRecipesCollectionViewCell", bundle:nil)
+        homeView.featuredRecipesCollectionView.registerNib(nibName, forCellWithReuseIdentifier: "FeaturedRecipesViewCell")
         
     }
 
@@ -47,11 +52,14 @@ extension SAHomeViewController: UICollectionViewDataSource {
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        
+        var  cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+        cell.backgroundColor = UIColor.redColor()
+        return cell
     }
     
 }

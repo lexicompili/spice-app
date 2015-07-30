@@ -44,6 +44,7 @@
                 <outlet property="featuredRecipesCollectionView" destination="o1A-c1-P1L" id="7kM-bh-njP"/>
                 <outlet property="searchBar" destination="GCl-GH-BMn" id="aZD-Q0-cNK"/>
             </connections>
+            <point key="canvasLocation" x="252" y="455"/>
         </view>
     </objects>
 </document>

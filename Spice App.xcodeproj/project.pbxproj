@@ -10,6 +10,7 @@
 		D341DE611B6387050037260B /* SAHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = D341DE601B6387050037260B /* SAHome.xib */; };
 		D341DE6C1B6387D40037260B /* SAHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341DE6B1B6387D40037260B /* SAHomeView.swift */; };
 		D341DE6E1B6388FE0037260B /* SAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341DE6D1B6388FE0037260B /* SAHomeViewController.swift */; };
+		D3CDA54A1B69B84B00C0456A /* SAFeaturedRecipesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CDA5491B69B84B00C0456A /* SAFeaturedRecipesCollectionViewCell.xib */; };
 		D3F56CBC1B638528003A669F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F56CBB1B638528003A669F /* AppDelegate.swift */; };
 		D3F56CBF1B638528003A669F /* Spice_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3F56CBD1B638528003A669F /* Spice_App.xcdatamodeld */; };
 		D3F56CC11B638528003A669F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F56CC01B638528003A669F /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		D341DE601B6387050037260B /* SAHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SAHome.xib; path = Xibs/SAHome.xib; sourceTree = "<group>"; };
 		D341DE6B1B6387D40037260B /* SAHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SAHomeView.swift; path = Views/SAHomeView.swift; sourceTree = "<group>"; };
 		D341DE6D1B6388FE0037260B /* SAHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SAHomeViewController.swift; path = Controllers/SAHomeViewController.swift; sourceTree = "<group>"; };
+		D3CDA5491B69B84B00C0456A /* SAFeaturedRecipesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAFeaturedRecipesCollectionViewCell.xib; sourceTree = "<group>"; };
 		D3F56CB61B638528003A669F /* Spice App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spice App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F56CBA1B638528003A669F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3F56CBB1B638528003A669F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				D341DE601B6387050037260B /* SAHome.xib */,
+				D3CDA5491B69B84B00C0456A /* SAFeaturedRecipesCollectionViewCell.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				D3F56CC41B638528003A669F /* Main.storyboard in Resources */,
 				D341DE611B6387050037260B /* SAHome.xib in Resources */,
 				D3F56CC91B638528003A669F /* LaunchScreen.xib in Resources */,
+				D3CDA54A1B69B84B00C0456A /* SAFeaturedRecipesCollectionViewCell.xib in Resources */,
 				D3F56CC61B638528003A669F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
