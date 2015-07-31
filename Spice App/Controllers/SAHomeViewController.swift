@@ -9,7 +9,7 @@
 import UIKit
 
 
-class SAHomeViewController: UIViewController, UICollectionViewDataSource {
+class SAHomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     private var homeView = NSBundle.mainBundle().loadNibNamed("SAHome", owner: nil, options: nil)[0] as! SAHomeView
     private let reuseIdentifier = "FeaturedRecipesViewCell"
@@ -22,6 +22,12 @@ class SAHomeViewController: UIViewController, UICollectionViewDataSource {
         
         //Set delegate value
         homeView.featuredRecipesCollectionView.dataSource = self
+        homeView.featuredRecipesCollectionView.delegate = self
+    
+        //Create view layout for flowLayout
+        var flowLayout = UICollectionViewFlowLayout()
+        flowLayout.scrollDirection = UICollectionViewScrollDirection.Horizontal
+        homeView.featuredRecipesCollectionView.setCollectionViewLayout(flowLayout, animated: true)
         
         //Register nib file for featured recipe collection view cell
         let nibName = UINib(nibName: "SAFeaturedRecipesCollectionViewCell", bundle:nil)
@@ -47,19 +53,23 @@ class SAHomeViewController: UIViewController, UICollectionViewDataSource {
 
 }
 
-
 extension SAHomeViewController: UICollectionViewDataSource {
-    
-    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        var  cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
         cell.backgroundColor = UIColor.redColor()
         return cell
     }
     
+}
+
+extension SAHomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSizeMake(100, 100)
+    }
+  
 }
