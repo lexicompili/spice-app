@@ -33,6 +33,7 @@
             <constraints>
                 <constraint firstItem="GCl-GH-BMn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5sd-Ry-Bgk"/>
                 <constraint firstItem="GCl-GH-BMn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="89" id="MT2-ui-EMB"/>
+                <constraint firstAttribute="trailing" secondItem="o1A-c1-P1L" secondAttribute="trailing" id="erv-pd-8Sg"/>
                 <constraint firstItem="o1A-c1-P1L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lDV-g2-6vS"/>
                 <constraint firstAttribute="trailing" secondItem="o1A-c1-P1L" secondAttribute="trailing" id="nlW-iF-GH1"/>
                 <constraint firstItem="o1A-c1-P1L" firstAttribute="top" secondItem="GCl-GH-BMn" secondAttribute="bottom" constant="27" id="oN3-B6-Zi9"/>
